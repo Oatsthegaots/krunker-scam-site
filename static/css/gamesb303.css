@@ -1,0 +1,366 @@
+@font-face {
+    font-family: mainfont;
+    src: url(fonts/sans_r.html)
+}
+
+body {
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    font-family: secular one, sans-serif
+}
+
+b {
+    color: #454545 !important
+}
+
+a {
+    cursor: pointer;
+    color: #00a6ff
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:active {
+    text-decoration: underline
+}
+
+#bodyHolder {
+    overflow: hidden;
+    padding: 30px
+}
+
+.subBodHolder {
+    width: 100%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #ececec;
+    text-align: center
+}
+
+.additInfoHol {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 6px;
+    font-size: 20px
+}
+
+.fillerImage {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 30%;
+    background-attachment: fixed
+}
+
+.fillerHeader {
+    left: 60px;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    text-shadow: 0 0 40px #000
+}
+
+.fillerTitle {
+    font-size: 50px !important;
+    color: #fff;
+    margin-top: -40px;
+    margin-bottom: -10px;
+    font-weight: 700;
+    text-shadow: 0 0 20px #424242
+}
+
+.fillerSub {
+    display: inline-block;
+    font-size: 18px;
+    width: 400px;
+    color: rgba(255, 255, 255, .8)
+}
+
+.fillerButtonH {
+    margin: 30px auto 0;
+    text-align: center
+}
+
+.fillerButton {
+    user-select: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #222;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 3px solid;
+    font-size: 17px;
+    transition: transform .1s ease;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.fillerButton:hover {
+    color: #222;
+    background-color: #fff;
+    transform: scale(.95)
+}
+
+.fillerButton:active {
+    color: #222;
+    background-color: #fff;
+    transform: scale(.88)
+}
+
+.gameCardH {
+    margin: 10px;
+    text-align: center;
+    display: inline-block
+}
+
+.gmCrdHov {
+    cursor: pointer;
+    transition: all .1s ease
+}
+
+.gmCrdHov:hover {
+    transform: scale(.95);
+    box-shadow: 0 0 30px #6c6c6c
+}
+
+.gmCrdHov:active {
+    transform: scale(.92);
+    box-shadow: 0 0 35px #6c6c6c
+}
+
+.subBodInfoH {
+    display: inline-block;
+    padding: 40px;
+    padding-top: 0;
+    padding-right: 0;
+    text-align: center
+}
+
+.subBodVid {
+    box-shadow: 0 0 15px #6c6c6c;
+    position: relative;
+    width: 320px;
+    height: 160px;
+    background: #262626;
+    vertical-align: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+    display: inline-block
+}
+
+.subBodTexts {
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px;
+    width: 290px;
+    vertical-align: top
+}
+
+.subBodTextHB {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 40px
+}
+
+.subBodTextH {
+    color: #565656;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 5px
+}
+
+.subBodTextS {
+    font-size: 18px;
+    color: #818181
+}
+
+.subBodPlBtn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background: #15e865;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 7px;
+    margin-top: 20px;
+    transition: transform .1s ease;
+    position: absolute;
+    bottom: 15px;
+    right: 15px
+}
+
+.subBodPlBtn:hover {
+    transform: scale(.95)
+}
+
+.subBodPlBtn:active {
+    transform: scale(.88)
+}
+
+.endBanner {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #282828;
+    text-align: center;
+    font-size: 30px;
+    color: #fff
+}
+
+#gameTabsH {
+    display: flex;
+    text-align: center;
+    background: #393939
+}
+
+.gameTab {
+    flex-grow: 1;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    transition: all .1s ease;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px
+}
+
+.gameTab:hover {
+    font-size: 17px;
+    background: #ffffff24
+}
+
+.gameTab:active {
+    font-size: 13px;
+    background: #00000030
+}
+
+.gamesScrllH {
+    position: relative;
+    padding: 10px;
+    text-align: left
+}
+
+.gamesLstHedr {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px
+}
+
+.gameScroller {
+    scroll-behavior: smooth;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.gameScroller::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.scrlB {
+    user-select: none;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    height: 60px;
+    border: 4px solid;
+    color: #222;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 8px;
+    transform: translate(0px, -50%);
+    background: #fff;
+    text-align: center;
+    line-height: 55px;
+    font-size: 50px;
+    transition: transform .1s ease
+}
+
+.scrlB:hover {
+    background-color: #222;
+    color: #fff;
+    transform: scale(.95) translate(0px, -50%) !important
+}
+
+.scrlB:active {
+    background-color: #222;
+    color: #fff;
+    transform: scale(.88) translate(0px, -50%) !important
+}
+
+.gPlCnt {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 7px #000;
+    position: absolute;
+    left: 15px;
+    bottom: 5px
+}
+
+.inDevCrd {
+    height: 160px;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    white-space: initial;
+    border-radius: 8px;
+    line-height: 160px
+}
+
+#fetGameInf {
+    color: #ffffffc2;
+    font-size: 16px
+}
+
+#fetGamePlayB {
+    margin-top: 10px;
+    color: #fff;
+    width: 200px;
+    background: #38b24b;
+    text-align: center;
+    padding: 6px;
+    font-size: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .1s ease
+}
+
+#fetGamePlayB:hover {
+    transform: scale(.95)
+}
